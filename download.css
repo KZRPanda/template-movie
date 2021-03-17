@@ -1,0 +1,49 @@
+.rating-terbaik{
+    font-family: Josefinsans-bold;
+    font-size: 20px;
+    color: #244e4d;
+    margin: 25px 35px;
+    margin-bottom: -17px;
+}
+
+.isi-web .daftar-movie-terdownload{
+    width: 96%;
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+}
+
+.isi-web .daftar-movie-terdownload .card{
+    height: max-content;
+    display: inline-table;
+    width: max-content;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.isi-web .daftar-movie-terdownload .card img{
+    height: 200px;
+    width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.226);
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.isi-web .daftar-movie-terdownload .card .judul-movie{
+    font-family: hindvadod-reg;
+    margin-top: 8px;
+    width: 130px;
+    height: max-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    position: relative;
+    text-align: left;
+    font-size: 17px;
+}
+
+.isi-web .daftar-movie-terdownload .card .tahun{
+    font-family: tenorsans-reg;
+    font-size: 15px;
+}

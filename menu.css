@@ -1,0 +1,54 @@
+*{
+    font-family:josefinsans-bold;
+}
+.daftar-genre{
+    background: transparent;
+    margin: 30px 50%;
+    width: 97%;
+    transform: translateX(-50%);
+}
+
+.daftar-genre .genre #genre-film{
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.daftar-genre .genre #genre-film:hover{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.445);
+}
+
+.daftar-genre .genre #genre-film:hover p{
+    color: orangered;
+}
+
+.daftar-genre .genre #genre-film .cover{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0.3;
+    z-index: 0;
+    background: rgb(0, 0, 0);
+}
+.daftar-genre .genre #genre-film p{
+    position: relative;
+    margin: 60px 50%;
+    text-shadow: 0px 0px 10px black;
+    transform: translatex(-50%);
+    text-align: center;
+    font-size: 30px;
+    width: fit-content;
+    transition: 0.2s ease-in-out;
+    color: white;
+    z-index: 2;
+}
