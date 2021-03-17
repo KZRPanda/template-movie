@@ -1,0 +1,324 @@
+<html>
+    <head>
+        <script src="files/js/jquery/src/jquery.js"></script>
+        <script src="files/js/jquery-3.5.1.min/index.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="files/fontawesome/css/brands.css" >
+        <link rel="stylesheet" href="files/font.css" >
+        <link rel="stylesheet" href="files/fontawesome/css/solid.css">
+        <link rel="stylesheet" href="files/fontawesome/css/fontawesome.css" >
+        <link rel="stylesheet" href="files/fontawesome-pro-5.15.1-web/css/light.css">
+        <link rel="stylesheet" href="files/fontawesome-pro-5.15.1-web/css/light.min.css">
+        <link rel="stylesheet" href="files/fontawesome-pro-5.15.1-web/css/fontawesome.css">
+        <link rel="stylesheet" href="files/fontawesome-pro-5.15.1-web/css/duotone.css">
+        <link rel="stylesheet" href="files/fontawesome-pro-5.15.1-web/css/duotone.min.css">
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                background: rgb(255, 255, 255);
+                overflow-x: hidden;
+            }
+
+            nav{
+                background:#ffffff;
+                width: 200px;
+                margin: 0 0px;
+                overflow: hidden;
+                transform: translateY(0);
+                height:100%;
+                padding: 10px;
+                position: fixed;
+                border-radius: 0px;
+                transition: 0.3s;
+            }
+
+            nav .navigasi{
+                margin-left: 50%;
+                width: max-content;
+                height: max-content;
+                transform: translateX(-50%);
+                margin-top: 20px ;
+            }
+
+
+            nav .navigasi a{
+                text-decoration: none;
+                font-size: 20px;
+                color:  rgb(168, 168, 168);
+                padding-right: 20px;
+            }
+
+            nav .navigasi span{
+                cursor: pointer;
+                display: list-item;
+                width: max-content;
+                padding: 0px;
+                text-decoration: none;
+                list-style-type: none;
+                margin-bottom: 5px;
+                height: 50px;
+            }
+
+            nav .navigasi p{
+                font-size: 15px;
+                padding: 0px;
+                color: rgb(168, 168, 168);
+                font-family: hindvadod-reg;
+                display: inline;
+                font-weight: bold;
+            }
+
+            nav h3{
+                color:#244e4d;
+                font-size: 40px;
+                text-align: center;
+                font-family: Pacifico-reg;
+            }
+
+            nav #image{
+                margin: 20px 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+
+            nav #profil #image img{
+                object-fit: cover;
+                width: 80px;
+                height: 80px;
+            }
+
+            nav #profil .nama{
+                text-align: center;
+                font-family: firasans-bold;
+                margin-top: 5px;
+                color: rgb(250, 27, 27);
+            }
+
+            nav #profil .bell{
+                position: absolute;
+                margin: 10px 57px;
+                color: rgb(250, 27, 27);
+                font-size: 15px;
+                z-index: 1;
+            }
+
+            .isi-web{
+                width: 1134px;
+                height: max-content;
+                overflow-x: hidden;
+                float: right;
+            }
+
+            .isi-web .jumbotron{
+                width: max-content;
+                height: max-content;
+                border-radius: 10px;
+                overflow: hidden;
+                margin: 10px 50%;
+                transform: translateX(-50%);
+            }
+
+            .isi-web .jumbotron img{
+                object-fit: cover;
+                width: 1000px;
+                object-position: center;
+                height: 300px;
+            }
+
+            .isi-web .search{
+                width: 100%;
+                margin: 10px 67px;
+            }
+            .isi-web .search input{
+                width: 1000px;
+                border-radius: 15px;
+                outline-style: none;
+                padding: 10px;
+                font-family: firasans-reg;
+                border: none;
+            }
+
+            .isi-web .search .cari{
+                position: absolute;
+                color: rgb(250, 27, 27);
+                font-weight: bold;
+                margin: 8px -40px;
+                font-size: 20px;
+            }
+
+            .isi-web .jumbotron .cover{
+                position: absolute;
+                width: 1000px;
+                transform: translateY(0px);
+                transition: 0.5s ease-in-out;
+                overflow: hidden;
+                height: 360px;
+                background: linear-gradient(45deg,rgb(0, 0, 0),rgba(255, 255, 255, 0));
+            }
+
+            .isi-web .jumbotron .cover .caption{
+                margin: 80px 40px;
+            }
+
+            .isi-web .jumbotron .cover h2{
+                color: white;
+                font-family: roboto-reg;
+                margin: 0px 0px;
+                font-size: 30px;
+
+            }
+            .isi-web .jumbotron .cover h1{
+                color: white;
+                margin: 0px 0px;
+                font-weight: bold;
+                font-size: 70px;
+                font-family: firasans-reg;
+            }
+
+            .isi-web .jumbotron .cover .most-watch{
+                height: 50px;
+                background: none;
+                cursor: pointer;
+                color: white;
+                width: 200px;
+                border-radius: 50px;
+                border: 2px solid white;
+                position: absolute;
+                transition: 0.2s;
+                padding-right: 20px;
+                font-size: 20px;
+                margin: -60px 40px;
+            }
+
+            .isi-web .jumbotron .cover .play{
+                position: absolute;
+                color: white;
+                margin: -43px 209px ;
+            }
+
+            .isi-web .daftar-movie{
+                width: 96%;
+                margin-left: 50%;
+                margin-top: 30px;
+                transform: translateX(-50%);
+            }
+
+            .isi-web .daftar-movie .card{
+                height: max-content;
+                display: inline-table;
+                width: max-content;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .isi-web .daftar-movie .card img{
+                height: 200px;
+                width: 130px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.226);
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+            .isi-web .daftar-movie .card .judul-movie{
+                font-family: hindvadod-reg;
+                margin-top: 8px;
+                width: 130px;
+                font-weight: bold;
+                position: relative;
+                text-align: center;
+                font-size: 17px;
+            }
+
+            .big-tag{
+                font-family: Josefinsans-bold;
+                font-size: 20px;
+                color: #244e4d;
+                margin: 25px 35px;
+                margin-bottom: -17px;
+            }
+
+            .more{
+                position: absolute;
+                font-family: Josefinsans-bold;
+                font-size: 20px;
+                color: #244e4d;
+                margin: -10px 1000px;
+                margin-bottom: -17px;
+                width: max-content;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .more:hover{
+                color: rgb(250, 27, 27);
+            }
+
+            .down{
+                margin-left: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h3>
+                MOVIX
+            </h3>
+            <div id="profil">
+                <i class="fas fa-circle bell"></i>
+                <div id="image">
+                    <img loading="lazy" src="files/foto/profil.jpg" alt="">
+                </div>
+                <p class="nama">Hello Ajid</p>
+            </div>
+            <div class="navigasi">
+                <span id="home" class="nav">
+                    <a href="#" class="fal fa-home-alt home" ></a>
+                    <p class="home">Home</p>
+                </span>
+                <span id="download" class="nav">
+                    <a href="#" class="fal fa-folder-download download"></a>
+                    <p class="download">Downloaded</p>
+                </span>
+                <span id="menu" class="nav">
+                    <a href="#" class="fal fa-th-large menu"></a>
+                    <p class="menu">Menu</p>
+                </span>
+                <span id="user" class="nav">
+                    <a href="sub/profil.html" class="fal fa-user-alt user"></a>
+                    <p class="user">Profile</p>
+                </span>
+                <span id="setting" class="nav">
+                    <a href="#" class="fal fa-sliders-h-square setting"></a>
+                    <p class="setting">Option</p>
+                </span>
+                <span id="out" class="nav">
+                    <a href="#" class="fal fa-sign-out out"></a>
+                    <p class="out">Logout</p>
+                </span>
+            </div>
+        </nav>
+        <div id="isi-web" class="isi-web">
+        </div>
+    </body>
+    <script>
+            function home(){
+                $(".home").css("color","#244e4d");
+                $(".download").css("color","rgb(168, 168, 168)");
+                $(".menu").css("color","rgb(168, 168, 168)");
+                $(".user").css("color","rgb(168, 168, 168)");
+                $(".setting").css("color","rgb(168, 168, 168)");
+                $(".out").css("color","rgb(168, 168, 168)");
+            }
+        $(".isi-web").load("sub/home.html")
+        home();
+    </script>
+</html> 

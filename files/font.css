@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Anton-Regular;
+    src: url("font/Anton-Regular.ttf");
+}
+
+@font-face{
+    font-family: montserrat-reg;
+    src: url("font/Montserrat-Regular.ttf");
+}
+
+@font-face{
+    font-family: firasans-reg;
+    src: url("font/FiraSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: firasans-bold;
+    src: url("font/FiraSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: tenorsans-reg;
+    src: url("font/TenorSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: hindvadod-reg;
+    src: url("font/HindVadodara-Regular.ttf");
+}
+
+@font-face{
+    font-family: montserrat-light;
+    src: url("font/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: josefinsans-bold;
+    src: url("font/JosefinSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: josefinsans-bold-italic;
+    src: url("font/JosefinSans-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: josefinsans-thin;
+    src: url("font/JosefinSans-Thin.ttf");
+}
+
+@font-face {
+    font-family: pacifico-reg;
+    src: url("font/Pacifico-Regular.ttf");
+}
+
+@font-face {
+    font-family: roboto-italic;
+    src: url("font/Roboto-Italic.ttf");
+}
+
+@font-face {
+    font-family: roboto-reg;
+    src: url("font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: raleway-reg;
+    src: url("font/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url("font/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: robotoslab-black;
+    src: url("font/RobotoSlab-Black.ttf");
+}
+
+@font-face {
+    font-family: robotoslab-bold;
+    src: url("font/RobotoSlab-Bold.ttf");
+}
+
+@font-face {
+    font-family: robotoslab-reg;
+    src: url("font/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: robotoslab-thin;
+    src: url("font/RobotoSlab-Thin.ttf");
+}

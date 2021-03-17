@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="../menu.css">
+<div class="big-tag" id="big-tag-genre">Genre Film</div>
+<div class="daftar-genre">
+    <div class="genre">
+        <div class="drama film" id="genre-film" style="background-image: url('../files/foto/genre/drama.jpg');">
+            <div class="cover"></div>
+            <p id="drama">DRAMA</p>
+        </div>
+        <div class="romance film" id="genre-film" style="background-image: url('../files/foto/genre/romance.jpeg');">
+            <div class="cover"></div>
+            <p id="romance">ROMANCE</p>
+        </div>
+        <div class="comedy film" id="genre-film" style="background-image: url('../files/foto/genre/comedy.jpeg');">
+            <div class="cover"></div>
+            <p id="comedy">COMEDY</p>
+        </div>
+        <div class="horror film" id="genre-film" style="background-image: url('../files/foto/genre/horr.png');">
+            <div class="cover"></div>
+            <p id="horror">HORROR</p>
+        </div>
+        <div class="animation film" id="genre-film" style="background-image: url('../files/foto/genre/animation.jpeg');">
+            <div class="cover"></div>
+            <p id="animation">ANIMATION</p>
+        </div>
+        <div class="anime film" id="genre-film" style="background-image: url('../files/foto/genre/anime.jpeg');">
+            <div class="cover"></div>
+            <p id="anime">ANIME</p>
+        </div>
+        <div class="adventure film" id="genre-film" style="background-image: url('../files/foto/genre/adventure.jpeg');">
+            <div class="cover"></div>
+            <p id="adventure">ADVENTURE</p>
+        </div>
+        <div class="sci-fi film" id="genre-film" style="background-image: url('../files/foto/genre/sci-fi.jpeg');">
+            <div class="cover"></div>
+            <p id="sci-fi">SCIFI</p>
+        </div>
+        <div class="action film" id="genre-film" style="background-image: url('../files/foto/genre/action.jpeg');">
+            <div class="cover"></div>
+            <p id="action">ACTION</p>
+        </div>
+        <div class="war film" id="genre-film" style="background-image: url('../files/foto/genre/war.jpg');">
+            <div class="cover"></div>
+            <p id="war">WAR</p>
+        </div>
+        <div class="family film" id="genre-film" style="background-image: url('../files/foto/genre/family.jpg');">
+            <div class="cover"></div>
+            <p id="family">FAMILY</p>
+        </div>
+        <div class="bollywood film" id="genre-film" style="background-image: url('../files/foto/genre/bollywood.jpeg');">
+            <div class="cover"></div>
+            <p id="bollywood">BOLLYWOOD</p>
+        </div>
+    </div>
+    <script>
+        var kelas,temp;
+
+        $(document).ready(function(){
+
+            $(".film").mouseover(function(){
+                var text = $(this).attr("class");
+                kelas = text.split(" ");
+                kelas = kelas[0]
+                document.getElementById("big-tag-genre").innerHTML = "Genre Film ("+kelas+")";
+            })
+
+            $(".film").click(function(){
+                sessionStorage.setItem("genre-film",kelas);
+                temp = sessionStorage.getItem("genre-film")
+            })
+
+        })
+
+    </script>
+</div>
